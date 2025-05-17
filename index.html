@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sweet Crumbs Bakery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom right, #fff7ed, #ffe4e1);
+      color: #5d2c02;
+    }
+
+    nav {
+      background-color: #fff5f5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav .logo {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.8rem;
+      color: #b22222;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      font-weight: 600;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #8b0000;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #d2691e;
+    }
+
+    section {
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+    }
+
+    header {
+      padding-top: 3rem;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      color: #8b0000;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #b22222;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .emoji {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .subscribe {
+      background: #fff0f0;
+      border-radius: 1rem;
+      padding: 2rem;
+      max-width: 500px;
+      margin: 2rem auto;
+      text-align: center;
+    }
+
+    input[type=email] {
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      width: 65%;
+      margin-right: 0.5rem;
+    }
+
+    button {
+      padding: 0.6rem 1rem;
+      background: #b22222;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #8b0000;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #a0522d;
+      margin: 2rem 0 1rem;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      input[type=email] {
+        width: 100%;
+        margin-bottom: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">Sweet Crumbs</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#recipes">Recipes</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <header>
+      <h1>Sweet Crumbs Bakery</h1>
+      <p>Freshly baked happiness, every day!</p>
+    </header>
+
+    <div class="features">
+      <div class="card">
+        <div class="emoji">🍞</div>
+        <h3>Artisan Breads</h3>
+        <p>Hand-kneaded, slow-risen breads full of flavor.</p>
+      </div>
+      <div class="card">
+        <div class="emoji">🍰</div>
+        <h3>Cakes & Pastries</h3>
+        <p>Delicate pastries and celebration cakes made to order.</p>
+      </div>
+      <div class="card">
+        <div class="emoji">☕</div>
+        <h3>Coffee & Treats</h3>
+        <p>Perfectly brewed coffee paired with sweet indulgences.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recipes Section -->
+  <section id="recipes">
+    <h2>Our Favorite Recipes</h2>
+    <div class="features">
+      <div class="card">
+        <div class="emoji">🧁</div>
+        <h3>Vanilla Cupcakes</h3>
+        <p>Light, fluffy cupcakes with buttercream frosting.</p>
+      </div>
+      <div class="card">
+        <div class="emoji">🍪</div>
+        <h3>Choco Chip Cookies</h3>
+        <p>Classic cookies with gooey centers and crisp edges.</p>
+      </div>
+      <div class="card">
+        <div class="emoji">🥧</div>
+        <h3>Apple Pie</h3>
+        <p>Old-fashioned apple pie with flaky crust.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2>Menu Highlights</h2>
+    <div class="features">
+      <div class="card">
+        <div class="emoji">🥐</div>
+        <h3>Croissants</h3>
+        <p>Buttery, flaky croissants served fresh daily.</p>
+      </div>
+      <div class="card">
+        <div class="emoji">🧀</div>
+        <h3>Cheesecakes</h3>
+        <p>Classic New York style or berry swirl.</p>
+      </div>
+      <div class="card">
+        <div class="emoji">🥖</div>
+        <h3>French Baguettes</h3>
+        <p>Perfect crust, soft crumb, and full of flavor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Sweet Crumbs is a family-owned bakery passionate about crafting delicious baked goods with love and quality ingredients. Visit us and taste the tradition!</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="subscribe">
+    <h2>Contact & Newsletter</h2>
+    <p>Stay in touch with us! Subscribe for weekly specials:</p>
+    <input type="email" id="emailInput" placeholder="Enter your email" />
+    <button onclick="subscribe()">Subscribe</button>
+    <p id="thankYouMsg" style="display:none;">Thanks for subscribing!</p>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">© 2025 Sweet Crumbs Bakery</div>
+
+  <script>
+    function subscribe() {
+      const emailInput = document.getElementById('emailInput');
+      const thankYouMsg = document.getElementById('thankYouMsg');
+      if (emailInput.value.trim() !== '') {
+        thankYouMsg.style.display = 'block';
+        setTimeout(() => {
+          thankYouMsg.style.display = 'none';
+          emailInput.value = '';
+        }, 3000);
+      }
+    }
+  </script>
+
+</body>
+</html>
